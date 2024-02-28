@@ -1,0 +1,158 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+:root {
+	--clr-1: #100c08;
+	--clr-2: #f0f8ff;
+	--clr-3: #ffffff;
+	--clr-4: #b53389;
+	--clr-5: #00b7eb;
+	--clr-6: #f00000;
+	--clr-7: #007fff;
+	--clr-8: #AEDEFC;
+	--clr-9: #43425D;
+	--clr-10: #ec3b83;
+	--clr-11: #91C8E4;
+	--clr-12: #f0f8ff;
+
+	/* hsla */
+	--hsla: hsla(255, 100%, 100%, 0.5);
+	--hsla-2: hsla(255, 100%, 100%, 0.4);
+
+	--hsl: hsl(0 0% 0% / .5);
+}
+
+::placeholder {
+	color: var(--clr-2);
+}
+
+.bg {
+	color: var(--clr-11);
+}
+
+.errors {
+	font-size: clamp(.7rem, 2vw, .9rem);
+	color: var(--clr-6);
+}
+
+body {
+	min-height: 100dvh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(220.55deg, #24CFC5 0%, #001C63 100%);
+}
+
+section {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	border: 3px solid var(--clr-2);
+	width: 70vw;
+	height: 70vh;
+	background: linear-gradient(220.55deg, #24CFC5 0%, #001C63 100%);
+	position: relative;
+}	
+
+.circles {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	display: flex;
+	gap: .5rem;
+}
+
+.circle {
+	width: 15px;
+	aspect-ratio: 1;
+	border-radius: 100vw;
+	top: 0;
+	display: flex;
+	gap: 1rem;
+	border: 1px solid var(--clr-2);
+}
+
+.circle:nth-child(1) {
+	background: linear-gradient(220.55deg, #8FFF85 0%, #39A0FF 100%);
+}
+
+.circle:nth-child(2) {
+	background: linear-gradient(220.55deg, #A531DC 0%, #4300B1 100%);
+}
+
+.circle:nth-child(3) {
+	background: linear-gradient(220.55deg, #FFC328 0%, #E20000 100%);
+}
+
+
+.title {
+	text-align: center;
+	color: var(--clr-2);
+}
+
+form {
+	width: 250px;
+}
+
+form .box {
+	position: relative;
+	padding-block: 1rem;
+}
+
+form .box > i {
+	position: absolute;
+	top: 38%;
+	font-size: clamp(.9rem, 1vw, 1rem);
+	color: var(--clr-2);
+}
+
+form input[type="submit"] {
+	border: 2px solid var(--clr-2);
+	background: linear-gradient(220.55deg, #7CF7FF 0%, #4B73FF 100%);
+	font-size: clamp(.7rem, 1vw, .8rem);
+	cursor: pointer;
+	padding: .7rem;
+	color: var(--clr-2);
+}
+
+form input[type="submit"]:hover {
+	background-color: var(--clr-5);
+	color: var(--clr-1);
+}
+
+form input[type="text"], input[type="password"] {
+	border: transparent;
+}
+
+form input[type="text"], input[type="password"], input[type="submit"] {
+	outline: transparent;
+	border-bottom: 1px solid var(--clr-2);
+	background-color: transparent;
+	width: 100%;
+	padding: .2rem 1rem;
+	margin-block: .2rem;
+	color: var(--clr-2);
+	font-size: clamp(.7rem, 1vw, .8rem);
+}
+
+form .show, .check {
+	display: flex;
+	gap: .2rem;
+	font-size: clamp(.7rem, 1vw, .8rem);
+	color: var(--clr-2);
+}
+
+form .remember {
+	padding-block: 2rem;
+	display: flex;
+	justify-content: space-between;
+	font-size: clamp(.7rem, 1vw, .8rem);
+}

@@ -1,0 +1,114 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	height: 100dvh;
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../finance/img/bg.png') no-repeat center fixed;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+}
+
+.rpt,
+.finance {
+	width: 300px;
+	aspect-ratio: 1 / .2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid white;
+	cursor: pointer;
+}
+
+.rpt {
+	background: linear-gradient(220.55deg, #00B960 0%, #00552C 100%);
+	-webkit-box-shadow:0px 0px 288px 111px rgba(37,196,164,0.9);
+	-moz-box-shadow: 0px 0px 288px 111px rgba(37,196,164,0.9);
+	box-shadow: 0px 0px 288px 111px rgba(37,196,164,0.9);
+	position: relative;
+}
+
+.rpt:hover {
+	background: linear-gradient(220.55deg, #3793FF 0%, #0017E4 100%);
+	transition: 5s;
+}
+
+.finance:hover {
+	background: linear-gradient(220.55deg, #00B960 0%, #00552C 100%);
+}
+
+.rpt::before,
+.rpt::after {
+	content: '';
+	position: absolute;
+	width: 50px;
+	aspect-ratio: 1;
+	background: red;
+}
+
+.rpt::before {
+	top: -5px;
+	left: -5px;
+	z-index: -999;
+    background: green;
+}
+
+.rpt::after {
+	bottom: -5px;
+	right: -5px;
+	z-index: -999;
+    background: #008000;
+}
+
+
+.finance {
+	background: linear-gradient(220.55deg, #3793FF 0%, #0017E4 100%);
+	-webkit-box-shadow:0px 0px 288px 111px rgba(37,58,196,0.9);
+	-moz-box-shadow: 0px 0px 288px 111px rgba(37,58,196,0.9);
+	box-shadow: 0px 0px 288px 111px rgba(37,58,196,0.9);
+	position: relative;
+}
+
+.finance::before,
+.finance::after {
+	content: '';
+	position: absolute;
+	width: 50px;
+	aspect-ratio: 1;
+	background: red;
+}
+
+.finance::before {
+	top: -5px;
+	left: -5px;
+	z-index: -999;
+    background: #00b7eb;
+}
+
+.finance::after {
+	bottom: -5px;
+	right: -5px;
+	z-index: -999;
+    background: #00ffff;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+
+@media (max-width: 35rem) {
+	body {
+		flex-direction: column;
+	}
+}

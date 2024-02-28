@@ -1,0 +1,92 @@
+.container {
+	--padding: 1rem;
+	width: min(100% - var(--padding), 80rem);
+	margin-inline: auto;
+}
+
+section {
+	display: grid;
+	padding: 2rem;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.auto {
+	height: 80dvh;
+	overflow-y: auto;
+	border-radius: 5px;
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+caption {
+	background-color: var(--clr-5);
+	padding: 1rem;
+}
+
+.h1 {
+	color: var(--clr-2);
+	font-size: clamp(1rem, 2vw, 1.2rem);
+	text-align: left;
+	padding: .7rem;
+}
+
+
+th {
+	background-color: var(--clr-5);
+	border-top: 1px solid var(--hsl);
+	color: var(--clr-2);
+	position: sticky;
+	top: 0;
+}
+
+tr:hover {
+	background-color: hsl(0 0% 0% / .1);
+}
+
+td {
+	border-bottom: 1px solid hsl(0 0% 0% / .1);
+	color: var(--clr-1);
+}
+
+
+th,
+td {
+	text-align: center;
+}
+
+
+td,
+th {
+	padding: .7rem;
+}
+
+@media (max-width: 52rem) {
+	th {
+		display: none;
+	}
+
+	td {
+		display: block;
+		text-align: left;
+		display: grid;
+		align-items: center;
+		grid-template-columns: 13ch 1fr;
+	}
+
+	td::before {
+		content: attr(data-cell) ":";
+		font-weight: bold;
+	}
+
+	.top {
+		justify-content: center;
+	}
+}

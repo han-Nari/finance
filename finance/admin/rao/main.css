@@ -1,0 +1,73 @@
+::placeholder {
+	color: var(--hsl-2);
+}
+
+.bg-blue {
+	color: var(--clr-7);
+}
+
+.errors {
+	font-size: clamp(.7rem, 2vw, .9rem);
+	color: var(--clr-14);
+}
+
+#back {
+	color: var(--clr-7);
+}
+
+.add_admin .title {
+	text-align: left;
+}
+
+.add_admin {
+	display: grid;
+}
+
+form {
+	padding-inline: 2rem;
+}
+
+form .box {
+	position: relative;
+	padding-block: 1rem;
+}
+
+form .box > i {
+	position: absolute;
+	transform: translateY(75%);
+	font-size: clamp(.8rem, 4vw, 1rem);
+	color: var(--clr-1);
+}
+
+form input[type="submit"] {
+	border: 1px solid var(--clr-2);
+	font-size: 1rem;
+	cursor: pointer;
+	background-color: var(--clr-7);
+	color: var(--clr-2);
+}
+
+form input[type="submit"]:hover {
+	background-color: var(--clr-7);
+	color: var(--clr-2);
+}
+
+form input[type="text"], input[type="password"], input[type="email"] {
+	border: none;
+	border-bottom: 1px solid var(--hsl);
+}
+
+form input[type="text"], input[type="password"], input[type="submit"], input[type="email"]{
+	outline: transparent;
+	background-color: transparent;
+	height: 100%;
+	width: 100%;
+	padding: .7rem 1.5rem;
+	color: var(--clr-1);
+}
+
+
+
+form input {
+	width: 100%;
+}
